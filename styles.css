@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(#060606, #242424);
+    margin: 1.5rem;
+    color: #FFFFFF;
+    overflow: auto;
+}
+
+.notepad-container {
+    background-color: #000000;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px; /* Space from top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.note-input-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#noteInput {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 5rem; /* Minimum height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding in width */
+    border-color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+#noteInput:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 8px rgba(129, 199, 132, 0.5);
+}
+
+#addNoteBtn {
+    background: #ffea00de;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 25px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    align-self: flex-end; /* Align button to the right */
+}
+
+#addNoteBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.notes-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-item {
+    background-color: #000000;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.note-item:hover {
+    transform: translateY(-3px);
+}
+
+/* mmmm piss color */
+.note-item:nth-child(n) { border-left: 1rem solid #ffea00; }
+
+.note-content {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+.note-meta {
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-align: right;
+    margin-top: auto; /* Push meta to bottom if content is short */
+}
+
+/* lmfao these comments are auto completed, i wasnt going to explain everything myself */
+
+.delete-note-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e33333;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%; /* Make it a circle */
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.delete-note-btn:hover {
+    opacity: 1;
+    background-color: #e55a5a;
+}
