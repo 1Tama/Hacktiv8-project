@@ -12,6 +12,8 @@ Features : Add, delete, and edit notes. Note data SHOULD be saved locally theref
 # the code.....
 I wrote some of the code, took some pieces from codepen (shoutout the people with like 5 views), and also uses the granite ai model to implement editable notes
 
+uh although you can edit the notes, the edits wont be saved so they go bye bye the next time you open it. i can fix it but i am currently hungry and wanna eat and wanna be done with this, go fork and fix it :DDD
+
 this part is here i guess as proof i used the granite ai?
 
 heres what i asked the ai and what it came up with, you can see the part it came up with in the code although it needed some correction to work visually but hey it works, scroll down more to see what i had to fix
